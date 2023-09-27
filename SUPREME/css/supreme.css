@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  background: linear-gradient(260deg, white, green);
+}
+header {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 120px auto;
+  column-gap: 300px;
+}
+
+header h1 {
+  padding-left: 120px;
+  padding-top: 10px;
+  font-size: 33px;
+  letter-spacing: -2px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 2px black;
+}
+header nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+}
+header nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: green;
+  font-size: 25px;
+}
+
+/*end of header style*/
+.supreme {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+}
+/*table1*/
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 15px;
+}
+.text {
+  padding-left: 10px;
+  color: rgb(56, 55, 55);
+}
+table td {
+  padding: 5px;
+  margin: 0 2px 0 -2px;
+}
+tbody tr {
+  border-bottom: 1px solid grey;
+}
+table td:nth-child(2) {
+  text-align: left;
+}
+
+table td:nth-child(10) {
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#headers {
+  background-color: black;
+  color: #fff;
+  text-shadow: 1px 1px 1px white;
+  border-radius: 5px 5px 0 0;
+}
+.child td {
+  padding-bottom: 10px;
+}
+.edges td {
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+img {
+  height: 20px;
+  width: 30px;
+}
+tbody {
+  background-color: #fff;
+  border-radius: 10px;
+}
+/*end of table1*/
+
+/*animations*/
+
+/*vertical-line*/
+.vertical-line {
+  border-left: 2px solid #000;
+  margin: 0 auto;
+}
+/*table2*/
+.table2 {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 190px;
+  text-align: center;
+  border-radius: 10px;
+}
+.table2 h2 {
+  padding: 20px;
+  font-size: 30px;
+}
+.table2 h3 {
+  background-color: grey;
+  padding: 10px;
+  margin: 0 2px 0 2px;
+  font-size: 25px;
+}
+
+hr {
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.down {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: left;
+    column-gap: 0;
+  }
+  header ul {
+    column-gap: 0;
+  }
+  header ul li {
+    margin-bottom: 10px;
+  }
+}
